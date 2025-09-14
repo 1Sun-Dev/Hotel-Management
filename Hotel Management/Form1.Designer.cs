@@ -1,6 +1,6 @@
 ﻿namespace Hotel_Management
 {
-    partial class Form1
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -40,7 +40,7 @@
             // LBDangnhap
             // 
             this.LBDangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBDangnhap.Location = new System.Drawing.Point(273, 38);
+            this.LBDangnhap.Location = new System.Drawing.Point(278, 46);
             this.LBDangnhap.Name = "LBDangnhap";
             this.LBDangnhap.Size = new System.Drawing.Size(158, 44);
             this.LBDangnhap.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             // txtNameLogin
             // 
-            this.txtNameLogin.Location = new System.Drawing.Point(320, 130);
+            this.txtNameLogin.Location = new System.Drawing.Point(320, 147);
             this.txtNameLogin.Name = "txtNameLogin";
             this.txtNameLogin.Size = new System.Drawing.Size(183, 20);
             this.txtNameLogin.TabIndex = 1;
@@ -103,11 +103,11 @@
             this.bttExit.UseVisualStyleBackColor = true;
             this.bttExit.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 422);
+            this.ClientSize = new System.Drawing.Size(714, 387);
             this.Controls.Add(this.bttExit);
             this.Controls.Add(this.bttLogin);
             this.Controls.Add(this.lblPassword);
@@ -115,9 +115,9 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtNameLogin);
             this.Controls.Add(this.LBDangnhap);
-            this.Name = "Form1";
+            this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "3";
+            this.Text = "Đăng nhập";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
