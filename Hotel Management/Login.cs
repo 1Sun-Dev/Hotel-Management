@@ -41,5 +41,31 @@ namespace Hotel_Management
         {
 
         }
+
+        private void LBDangnhap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNameLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNameLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ForgotPass f = new ForgotPass();
+            f.Show();
+        }
     }
 }
