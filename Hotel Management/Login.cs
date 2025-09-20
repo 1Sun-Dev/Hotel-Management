@@ -67,5 +67,11 @@ namespace Hotel_Management
             ForgotPass f = new ForgotPass();
             f.Show();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {   
+            QuanLyNhanVien q = new QuanLyNhanVien();
+            q.Show();
+        }
     }
 }
