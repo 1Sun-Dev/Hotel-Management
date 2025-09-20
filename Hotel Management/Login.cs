@@ -70,8 +70,28 @@ namespace Hotel_Management
 
         private void button1_Click_1(object sender, EventArgs e)
         {   
-            QuanLyNhanVien q = new QuanLyNhanVien();
-            q.Show();
+       
+        }
+
+        private void txtNameLogin_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnQuanly_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
