@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Hotel_Management
 {
-    public partial class ForgotPass : Form
+    public partial class ForgotPassword : Form
     {
-        public ForgotPass()
+        public ForgotPassword()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LBDangnhap_Click(object sender, EventArgs e)
+        private void lblForgotPassword_Click(object sender, EventArgs e)
         {
 
         }
