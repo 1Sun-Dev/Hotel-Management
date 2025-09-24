@@ -106,7 +106,20 @@ namespace Hotel_Management
 
         private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            ForgotPassword f = new ForgotPassword();    
+            this.Hide();
+            frmForgotPassword f = new frmForgotPassword();
+            f.Show();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home f = new Home();  
             f.Show();
         }
     }

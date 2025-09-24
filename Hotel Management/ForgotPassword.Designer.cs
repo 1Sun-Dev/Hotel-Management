@@ -1,6 +1,6 @@
 ﻿namespace Hotel_Management
 {
-    partial class ForgotPassword
+    partial class frmForgotPassword
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForgotPassword));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmForgotPassword));
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.btnLogin = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.lblNameLogin = new System.Windows.Forms.Label();
             this.lblForgotPassword = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.lblLogin1 = new System.Windows.Forms.LinkLabel();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,9 +47,9 @@
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
+            this.guna2ShadowPanel1.Controls.Add(this.lblLogin1);
             this.guna2ShadowPanel1.Controls.Add(this.btnLogin);
             this.guna2ShadowPanel1.Controls.Add(this.txtUserName);
-            this.guna2ShadowPanel1.Controls.Add(this.linkLabel1);
             this.guna2ShadowPanel1.Controls.Add(this.lblNameLogin);
             this.guna2ShadowPanel1.Controls.Add(this.lblForgotPassword);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
@@ -72,7 +72,7 @@
             this.btnLogin.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(92, 278);
+            this.btnLogin.Location = new System.Drawing.Point(108, 285);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(203, 54);
             this.btnLogin.TabIndex = 39;
@@ -98,18 +98,6 @@
             this.txtUserName.SelectedText = "";
             this.txtUserName.Size = new System.Drawing.Size(365, 47);
             this.txtUserName.TabIndex = 35;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(355, 443);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(45, 16);
-            this.linkLabel1.TabIndex = 34;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Login";
             // 
             // lblNameLogin
             // 
@@ -172,7 +160,20 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(29, 29);
             this.guna2ControlBox1.TabIndex = 40;
             // 
-            // ForgotPassword
+            // lblLogin1
+            // 
+            this.lblLogin1.AutoSize = true;
+            this.lblLogin1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin1.LinkColor = System.Drawing.Color.White;
+            this.lblLogin1.Location = new System.Drawing.Point(340, 422);
+            this.lblLogin1.Name = "lblLogin1";
+            this.lblLogin1.Size = new System.Drawing.Size(45, 16);
+            this.lblLogin1.TabIndex = 40;
+            this.lblLogin1.TabStop = true;
+            this.lblLogin1.Text = "Login";
+            this.lblLogin1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLogin1_LinkClicked);
+            // 
+            // frmForgotPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -183,7 +184,7 @@
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ForgotPassword";
+            this.Name = "frmForgotPassword";
             this.Text = "ForgotPassword";
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
@@ -197,12 +198,12 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private Guna.UI2.WinForms.Guna2GradientButton btnLogin;
         private Guna.UI2.WinForms.Guna2TextBox txtUserName;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label lblNameLogin;
         private System.Windows.Forms.Label lblForgotPassword;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private System.Windows.Forms.LinkLabel lblLogin1;
     }
 }

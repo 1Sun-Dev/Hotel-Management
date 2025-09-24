@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hotel_Management
 {
-    public partial class ForgotPassword : Form
+    public partial class frmForgotPassword : Form
     {
-        public ForgotPassword()
+        public frmForgotPassword()
         {
             InitializeComponent();
         }
@@ -20,6 +20,25 @@ namespace Hotel_Management
         private void lblForgotPassword_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
+
+        }
+
+        private void Login_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLogin1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            frmLogin f = new frmLogin();
+            f.ShowDialog();
+            this.Close();
         }
     }
 }
