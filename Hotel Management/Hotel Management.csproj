@@ -82,6 +82,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhToan.Designer.cs">
+      <DependentUpon>ThanhToan.cs</DependentUpon>
+    </Compile>
     <Compile Include="TongQuan.cs">
       <SubType>Form</SubType>
     </Compile>
