@@ -100,7 +100,12 @@ namespace Hotel_Management
 
         private void G_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            frmGoiDV f = new frmGoiDV();
+            f.TopLevel = false; //Không phải form con
+            f.MdiParent = this;
+            f.FormBorderStyle = FormBorderStyle.None; //Bỏ viền
+            f.Dock = DockStyle.Fill; //focus màn hình chính
+            f.Show();
         }
 
         private void barButtonItem13_ItemClick(object sender, ItemClickEventArgs e)

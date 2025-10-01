@@ -83,24 +83,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ForgotPassword.cs">
+    <Compile Include="frmGoiDV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ForgotPassword.Designer.cs">
-      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    <Compile Include="frmGoiDV.Designer.cs">
+      <DependentUpon>frmGoiDV.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMaincs.cs">
+    <Compile Include="UI\frmForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMaincs.Designer.cs">
+    <Compile Include="UI\frmForgotPassword.Designer.cs">
+      <DependentUpon>frmForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmMaincs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmMaincs.Designer.cs">
       <DependentUpon>frmMaincs.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Connection.cs" />
-    <Compile Include="frmQLKhachHang.cs">
+    <Compile Include="UI\frmQLKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmQLKhachHang.Designer.cs">
+    <Compile Include="UI\frmQLKhachHang.Designer.cs">
       <DependentUpon>frmQLKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="ThanhToan.cs">
@@ -109,32 +115,35 @@
     <Compile Include="ThanhToan.Designer.cs">
       <DependentUpon>ThanhToan.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="UI\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
+    <Compile Include="UI\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="frmTimKiemKH.cs">
+    <Compile Include="UI\frmTimKiemKH.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTimKiemKH.Designer.cs">
+    <Compile Include="UI\frmTimKiemKH.Designer.cs">
       <DependentUpon>frmTimKiemKH.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ForgotPassword.resx">
-      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    <EmbeddedResource Include="frmGoiDV.resx">
+      <DependentUpon>frmGoiDV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMaincs.resx">
+    <EmbeddedResource Include="UI\frmForgotPassword.resx">
+      <DependentUpon>frmForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmMaincs.resx">
       <DependentUpon>frmMaincs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQLKhachHang.resx">
+    <EmbeddedResource Include="UI\frmQLKhachHang.resx">
       <DependentUpon>frmQLKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThanhToan.resx">
       <DependentUpon>ThanhToan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
+    <EmbeddedResource Include="UI\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -146,7 +155,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmTimKiemKH.resx">
+    <EmbeddedResource Include="UI\frmTimKiemKH.resx">
       <DependentUpon>frmTimKiemKH.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
