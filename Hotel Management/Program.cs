@@ -13,7 +13,7 @@ namespace Hotel_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMaincs()); // Mở form Login đầu tiên
+            Application.Run(new frmLogin()); // Mở form Login đầu tiên
         }
     }
 }

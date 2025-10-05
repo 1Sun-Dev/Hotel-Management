@@ -123,59 +123,62 @@ namespace Hotel_Management
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = txtUserName.Text.Trim();
-            string password = txtPassword.Text.Trim();
+            this.Hide();
+            frmMaincs f = new frmMaincs();
+            f.ShowDialog();
+            //string username = txtUserName.Text.Trim();
+            //string password = txtPassword.Text.Trim();
 
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
-            {
-                MessageBox.Show("Vui lòng nhập đầy đủ tài khoản và mật khẩu!", "Thông báo",
-                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            //if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            //{
+            //    MessageBox.Show("Vui lòng nhập đầy đủ tài khoản và mật khẩu!", "Thông báo",
+            //                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
 
-            string connectionString = @"Data Source=Admin;Initial Catalog=QuanLyKhachSan;Integrated Security=True";
+            //string connectionString = @"Data Source=Admin;Initial Catalog=QuanLyKhachSan;Integrated Security=True";
 
-            try
-            {
-                // Khởi tạo kết nối SQL
-                using (SqlConnection conn = new SqlConnection(connectionString))
-                {
-                    conn.Open(); // Mở kết nối
-                    string query = "SELECT COUNT(*) FROM LOGIN WHERE TaiKhoan=@TaiKhoan AND MatKhau=@MatKhau";
+            //try
+            //{
+            //    // Khởi tạo kết nối SQL
+            //    using (SqlConnection conn = new SqlConnection(connectionString))
+            //    {
+            //        conn.Open(); // Mở kết nối
+            //        string query = "SELECT COUNT(*) FROM LOGIN WHERE TaiKhoan=@TaiKhoan AND MatKhau=@MatKhau";
 
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
-                    {
-                        // Gán giá trị tham số đúng tên trong câu truy vấn
-                        cmd.Parameters.AddWithValue("@TaiKhoan", username);
-                        cmd.Parameters.AddWithValue("@MatKhau", password);
+            //        using (SqlCommand cmd = new SqlCommand(query, conn))
+            //        {
+            //            // Gán giá trị tham số đúng tên trong câu truy vấn
+            //            cmd.Parameters.AddWithValue("@TaiKhoan", username);
+            //            cmd.Parameters.AddWithValue("@MatKhau", password);
 
-                        int count = (int)cmd.ExecuteScalar(); // Thực hiện truy vấn và lấy kết quả
+            //            int count = (int)cmd.ExecuteScalar(); // Thực hiện truy vấn và lấy kết quả
 
-                        if (count > 0)
-                        {
-                            MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //            if (count > 0)
+            //            {
+            //                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                            // Mở form chính
-                            frmMaincs mainForm = new frmMaincs();
-                            this.Hide();
-                            mainForm.ShowDialog();
-                            this.Show();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
-                }
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show("Lỗi kết nối SQL Server: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //                // Mở form chính
+            //                frmMaincs mainForm = new frmMaincs();
+            //                this.Hide();
+            //                mainForm.ShowDialog();
+            //                this.Show();
+            //            }
+            //            else
+            //            {
+            //                MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //            }
+            //        }
+            //    }
+            //}
+            //catch (SqlException ex)
+            //{
+            //    MessageBox.Show("Lỗi kết nối SQL Server: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Đã xảy ra lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
         }
 
         private void guna2ToggleSwitch1_CheckedChanged_1(object sender, EventArgs e)
