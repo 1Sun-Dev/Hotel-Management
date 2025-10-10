@@ -11,11 +11,16 @@ using System.Windows.Forms;
 
 namespace Hotel_Management
 {
-    public partial class frmGoiDV : DevExpress.XtraEditors.XtraForm
+    public partial class frmDanhSachPhong : DevExpress.XtraEditors.XtraForm
     {
-        public frmGoiDV()
+        public frmDanhSachPhong()
         {
             InitializeComponent();
+        }
+
+        private void frmDanhSachPhong_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

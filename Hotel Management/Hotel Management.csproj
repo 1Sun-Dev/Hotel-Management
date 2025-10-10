@@ -83,10 +83,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmGoiDV.cs">
+    <Compile Include="frmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGoiDV.Designer.cs">
+    <Compile Include="frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmGoiDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmGoiDV.Designer.cs">
       <DependentUpon>frmGoiDV.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\frmForgotPassword.cs">
@@ -128,7 +134,16 @@
     <Compile Include="UI\frmTimKiemKH.Designer.cs">
       <DependentUpon>frmTimKiemKH.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmGoiDV.resx">
+    <Compile Include="UI\frmDanhSachPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmDanhSachPhong.Designer.cs">
+      <DependentUpon>frmDanhSachPhong.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmGoiDV.resx">
       <DependentUpon>frmGoiDV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmForgotPassword.resx">
@@ -157,6 +172,9 @@
     </Compile>
     <EmbeddedResource Include="UI\frmTimKiemKH.resx">
       <DependentUpon>frmTimKiemKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmDanhSachPhong.resx">
+      <DependentUpon>frmDanhSachPhong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

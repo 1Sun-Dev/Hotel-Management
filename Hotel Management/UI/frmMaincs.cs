@@ -85,7 +85,12 @@ namespace Hotel_Management
 
         private void barButtonItem8_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            frmNhanVien f = new frmNhanVien();
+            f.TopLevel = false; //Không phải form con
+            f.MdiParent = this;
+            f.FormBorderStyle = FormBorderStyle.None; //Bỏ viền
+            f.Dock = DockStyle.Fill; //focus màn hình chính
+            f.Show();
         }
 
         private void barButtonItem10_ItemClick(object sender, ItemClickEventArgs e)
@@ -96,6 +101,12 @@ namespace Hotel_Management
         private void barButtonItem11_ItemClick(object sender, ItemClickEventArgs e)
         {
 
+            frmDanhSachPhong f = new frmDanhSachPhong();
+            f.TopLevel = false; //Không phải form con
+            f.MdiParent = this;
+            f.FormBorderStyle = FormBorderStyle.None; //Bỏ viền
+            f.Dock = DockStyle.Fill; //focus màn hình chính
+            f.Show();
         }
 
         private void G_ItemClick(object sender, ItemClickEventArgs e)
