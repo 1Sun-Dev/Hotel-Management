@@ -12,20 +12,31 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <PublishUrl>publish\</PublishUrl>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Admin\Desktop\Test\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://raw.githubusercontent.com/1Sun-Dev/Hotel-Management/refs/heads/master/</InstallUrl>
+    <UpdateUrl>https://raw.githubusercontent.com/1Sun-Dev/Hotel-Management/refs/heads/master/</UpdateUrl>
+    <SupportUrl>https://raw.githubusercontent.com/1Sun-Dev/Hotel-Management/refs/heads/master</SupportUrl>
+    <ErrorReportUrl>https://raw.githubusercontent.com/1Sun-Dev/Hotel-Management/refs/heads/master</ErrorReportUrl>
+    <TargetCulture>vi</TargetCulture>
+    <ProductName>Quản lý Khách Sạn</ProductName>
+    <PublisherName>Nguyen Nhat Truong</PublisherName>
+    <SuiteName>Nguyen Nhat Truong</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>HotelManager.html</WebPage>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
