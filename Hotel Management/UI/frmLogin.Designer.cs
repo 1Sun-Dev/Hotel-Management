@@ -52,6 +52,7 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblNameLogin = new System.Windows.Forms.Label();
             this.LBDangnhap = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -295,12 +296,25 @@
             this.LBDangnhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LBDangnhap.Click += new System.EventHandler(this.LBDangnhap_Click_1);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(940, 585);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(130, 20);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Version 1.0.0.0";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(1095, 632);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2ControlBox2);
@@ -344,6 +358,7 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblNameLogin;
         private System.Windows.Forms.Label LBDangnhap;
+        private System.Windows.Forms.Label label1;
     }
 }
 
