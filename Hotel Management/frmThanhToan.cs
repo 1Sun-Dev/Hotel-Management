@@ -1,5 +1,4 @@
-﻿using DevExpress.XtraEditors;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Hotel_Management
 {
-    public partial class frmGoiDV : DevExpress.XtraEditors.XtraForm
+    public partial class frmThanhToan : Form
     {
-        public frmGoiDV()
+        public frmThanhToan()
         {
             InitializeComponent();
-        }
-
-        private void groupControl1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

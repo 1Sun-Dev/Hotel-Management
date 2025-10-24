@@ -15,7 +15,7 @@ namespace Hotel_Management
     public partial class frmLogin : Form
     {
 
-        private SqlConnection sqlConnection;
+        //private SqlConnection sqlConnection;
 
 
         public frmLogin()
